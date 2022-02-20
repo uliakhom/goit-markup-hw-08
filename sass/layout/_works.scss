@@ -1,0 +1,35 @@
+.works {
+  padding-top: 47px;
+
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.works__list {
+  display: flex;
+  position: relative;
+}
+
+.works__item {
+  margin-right: 30px;
+  &:last-child {
+    margin-right: 0px;
+  }
+}
+
+.works__description {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  background-color: rgba(47, 48, 58, 0.8);
+
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--white-color);
+}

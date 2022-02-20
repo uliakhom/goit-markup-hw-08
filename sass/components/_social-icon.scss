@@ -1,0 +1,57 @@
+.social__link {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
+}
+
+.social__button {
+  margin-left: 10px;
+  &:first-child {
+    margin-left: 0;
+  }
+}
+
+// TEAM__SECTION
+
+.social {
+  display: flex;
+  justify-content: center;
+  margin: 16px 32px 0 32px;
+}
+
+.social__icon {
+  margin: 12px;
+  fill: rgba(175, 177, 184, 1);
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  .social__link:hover &,
+  .social__link:focus & {
+    fill: #ffffff;
+  }
+}
+
+// FOOTER__SECTION
+
+.join {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+
+.join__social {
+  display: flex;
+}
+
+.social__link--join {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.social__icon--join {
+  fill: var(--white-color);
+}
