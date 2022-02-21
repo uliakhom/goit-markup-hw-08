@@ -23,20 +23,25 @@
 <!--Шапка сайта-->
 <header class="header">
     <div class="container container--header">
-        <nav class="site-nav" data-menu>
+        <nav class="site-nav" >
 
             <a href="./index.html" class="logo">
                 <span class="logo__accent">Web</span>Studio
             </a>
-
-            <button type="button" class="menu__button" aria-expanded="false" data-menu-button>
+            <button type="button" class="open-menu-btn" >
                 <svg width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="icon__cross" href="./images/icons.svg#icon-close"></use>
                     <use class="icon__menu" href="./images/icons.svg#icon-burger"></use>
                 </svg>
             </button>
-
+            <div class="mob-menu is-hidden">
             <div class="menu__container">
+                <div>
+                <button type="button" class="close-menu-btn" aria-expanded="false" data-menu-button>
+                    <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon__cross" href="./images/icons.svg#icon-close"></use>
+                        
+                    </svg>
+                </button>
                 <ul class="site-nav__list">
 
                     <li class="site-nav__item"><a href="./index.html"
@@ -44,6 +49,7 @@
                     <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link site-nav__link--current">Портфолио</a></li>
                     <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
                 </ul>
+            </div>
                 <ul class="adress-nav">
                     <li class="adress-nav__item">
                         <a href="mailto:info@devstudio.com" target="_blank"
@@ -72,7 +78,7 @@
                         <a href="" class="social-nav__link">LinkedIn</a>
                     </li>
 
-                </ul>
+                </ul></div>
             </div>
         </nav>
 

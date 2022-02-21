@@ -23,66 +23,71 @@
 <body>
     
     <!--Шапка сайта-->
-    <header class="header">
-        <div class="container container--header">
-        <nav class="site-nav" data-menu>
-           
+<header class="header">
+    <div class="container container--header">
+        <nav class="site-nav">
+
             <a href="./index.html" class="logo">
-            <span class="logo__accent">Web</span>Studio
+                <span class="logo__accent">Web</span>Studio
             </a>
-            
-            <button type="button" class="menu__button"
-            aria-expanded="false"
-            data-menu-button>
-                <svg 
-                width="40" 
-                height="40"
-                aria-label="Переключатель мобильного меню"
-                >
-                    <use class="icon__cross" href="./images/icons.svg#icon-close"></use>
+            <button type="button" class="open-menu-btn">
+                <svg width="40" height="40" aria-label="Переключатель мобильного меню">
                     <use class="icon__menu" href="./images/icons.svg#icon-burger"></use>
                 </svg>
             </button>
+            <div class="mob-menu is-hidden">
+                <div class="menu__container">
+                    <div>
+                        <button type="button" class="close-menu-btn" aria-expanded="false" data-menu-button>
+                            <svg width="40" height="40" aria-label="Переключатель мобильного меню">
+                                <use class="icon__cross" href="./images/icons.svg#icon-close"></use>
 
-            <div class="menu__container" >
-            <ul class="site-nav__list">
-            
-                <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
-                <li class="site-nav__item"><a href="./portfolio.html" class="site-nav__link">Портфолио</a></li>
-                <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
-            </ul>
-            <ul class="adress-nav">
-                <li class="adress-nav__item">
-                <a href="mailto:info@devstudio.com" target="_blank" class="adress-nav__link adress-nav__link--mail">
-                    <svg class="adress-nav__icon" width="16" height="12" >
-                        <use href="./images/icons.svg#icon-envelope"></use>
-                    </svg>info@devstudio.com</a></li>
-                <li class="adress-nav__item"><a href="tel:+380961111111" class="adress-nav__link adress-nav__link--tel">
-                <svg class="adress-nav__icon" width="10" height="16">
-                    <use href="./images/icons.svg#icon-phone"></use>
-                </svg>+38 096 111 11 11</a></li>
-            </ul>
-            <ul class="social-nav">
-                <li class="social-nav__item">
-                    <a href="" class="social-nav__link">Instagram</a>
-                </li>
-                <li class="social-nav__item">
-                    <a href="" class="social-nav__link">Twitter</a>
-                </li>
-                <li class="social-nav__item">
-                    <a href="" class="social-nav__link">Facebook</a>
-                </li>
-                <li class="social-nav__item">
-                    <a href="" class="social-nav__link">LinkedIn</a>
-                </li>
-                
-            </ul>
+                            </svg>
+                        </button>
+                        <ul class="site-nav__list">
+
+                            <li class="site-nav__item"><a href="./index.html" class="site-nav__link site-nav__link--current">Студия</a></li>
+                            <li class="site-nav__item"><a href="./portfolio.html"
+                                    class="site-nav__link">Портфолио</a></li>
+                            <li class="site-nav__item"><a href="" class="site-nav__link">Контакты</a></li>
+                        </ul>
+                    </div>
+                    <ul class="adress-nav">
+                        <li class="adress-nav__item">
+                            <a href="mailto:info@devstudio.com" target="_blank"
+                                class="adress-nav__link adress-nav__link--mail">
+                                <svg class="adress-nav__icon" width="16" height="12">
+                                    <use href="./images/icons.svg#icon-envelope"></use>
+                                </svg>info@devstudio.com</a>
+                        </li>
+                        <li class="adress-nav__item"><a href="tel:+380961111111"
+                                class="adress-nav__link adress-nav__link--tel">
+                                <svg class="adress-nav__icon" width="10" height="16">
+                                    <use href="./images/icons.svg#icon-phone"></use>
+                                </svg>+38 096 111 11 11</a></li>
+                    </ul>
+                    <ul class="social-nav">
+                        <li class="social-nav__item">
+                            <a href="" class="social-nav__link">Instagram</a>
+                        </li>
+                        <li class="social-nav__item">
+                            <a href="" class="social-nav__link">Twitter</a>
+                        </li>
+                        <li class="social-nav__item">
+                            <a href="" class="social-nav__link">Facebook</a>
+                        </li>
+                        <li class="social-nav__item">
+                            <a href="" class="social-nav__link">LinkedIn</a>
+                        </li>
+
+                    </ul>
+                </div>
             </div>
         </nav>
-        
-            
-        </div>
-    </header>
+
+
+    </div>
+</header>
 
 
     <main>
